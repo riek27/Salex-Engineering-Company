@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ModernDesign</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ModernDesign</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch to start your design journey. We're here to bring your vision to life.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Ready to transform your space? We'd love to hear about your project and discuss how we can help bring your vision to reality.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Our Office</h3>
+                                <p>123 Design Street<br>Creative City, CC 12345</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>(555) 123-4567<br>Mon-Fri, 9am-6pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>info@moderndesign.com<br>response within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-houzz"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="residential">Residential Design</option>
+                                <option value="commercial">Commercial Design</option>
+                                <option value="custom">Custom Solutions</option>
+                                <option value="consultation">Design Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-10k">Under $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="over-100k">Over $100,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project, timeline, and any specific requirements..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for design tips and inspiration</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Visit Our Studio</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>ModernDesign Studio</h3>
+                    <p>123 Design Street, Creative City</p>
+                    <p>Open Monday-Friday, 9am-6pm</p>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does a typical project take?</h3>
+                    <p>Project timelines vary based on scope and complexity. Residential projects typically take 8-12 weeks, while commercial projects may take 12-20 weeks. We provide detailed timelines during our initial consultation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you work with remote clients?</h3>
+                    <p>Yes! We regularly work with clients across the country through virtual consultations, 3D renderings, and detailed project management tools to ensure a seamless experience regardless of location.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What is your design fee structure?</h3>
+                    <p>We offer flexible pricing options including flat fee, hourly rate, or percentage of project cost. During our initial consultation, we'll recommend the best approach for your specific project needs and budget.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you handle project management?</h3>
+                    <p>Absolutely. We provide comprehensive project management services, coordinating with contractors, suppliers, and artisans to ensure your project stays on schedule and within budget.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can you work within my budget?</h3>
+                    <p>Yes, we're experienced at creating beautiful designs within various budget ranges. We'll be transparent about costs and help prioritize elements to maximize your investment.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do I get started?</h3>
+                    <p>Simply fill out our contact form or call us to schedule a complimentary initial consultation. We'll discuss your vision, requirements, and timeline to determine if we're the right fit for your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Begin Your Design Journey?</h2>
+            <p>Contact us today for a complimentary consultation and let's create something amazing together.</p>
+            <a href="tel:5551234567" class="btn btn-secondary">Call Us Now</a>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body text-center">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                <a href="index.html" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ModernDesign</h3>
+                    <p>Creating beautiful, functional spaces that inspire and delight.</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@moderndesign.com</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ModernDesign. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            const overlay = document.getElementById('overlay');
+            
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                overlay.classList.toggle('active');
+                
+                if (navMenu.classList.contains('active')) {
+                    menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+            
+            overlay.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+            
+            const navLinks = document.querySelectorAll('nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+            
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    navMenu.classList.remove('active');
+                    overlay.classList.remove('active');
+                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+            });
+
+            // Contact Form Validation
+            const contactForm = document.getElementById('contactForm');
+            const successModal = document.getElementById('successModal');
+            const closeModal = document.querySelector('#successModal .close-modal');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset errors
+                document.querySelectorAll('.error-message').forEach(error => {
+                    error.textContent = '';
+                });
+                document.querySelectorAll('.form-group input, .form-group textarea').forEach(field => {
+                    field.classList.remove('error');
+                });
+                
+                let isValid = true;
+                
+                // Name validation
+                const name = document.getElementById('name');
+                if (!name.value.trim()) {
+                    document.getElementById('nameError').textContent = 'Name is required';
+                    name.classList.add('error');
+                    isValid = false;
+                }
+                
+                // Email validation
+                const email = document.getElementById('email');
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email.value.trim()) {
+                    document.getElementById('emailError').textContent = 'Email is required';
+                    email.classList.add('error');
+                    isValid = false;
+                } else if (!emailRegex.test(email.value)) {
+                    document.getElementById('emailError').textContent = 'Please enter a valid email';
+                    email.classList.add('error');
+                    isValid = false;
+                }
+                
+                // Message validation
+                const message = document.getElementById('message');
+                if (!message.value.trim()) {
+                    document.getElementById('messageError').textContent = 'Message is required';
+                    message.classList.add('error');
+                    isValid = false;
+                }
+                
+                if (isValid) {
+                    // In a real application, you would send the form data to a server here
+                    // For demonstration, we'll just show the success modal
+                    successModal.style.display = 'block';
+                    contactForm.reset();
+                }
+            });
+
+            // Close modal
+            closeModal.addEventListener('click', function() {
+                successModal.style.display = 'none';
+            });
+
+            // Close modal when clicking outside
+            window.addEventListener('click', function(e) {
+                if (e.target === successModal) {
+                    successModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
