@@ -3,268 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - ModernDesign</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Our Services | Elite Roofing</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>ModernDesign</h1>
-            </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="overlay" id="overlay"></div>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Elite<span>Roofing</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="active">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Our Services</h1>
-            <p>Comprehensive design solutions tailored to your unique needs and vision</p>
-        </div>
-    </section>
-
-    <!-- Services Detail -->
-    <section class="services-detail">
-        <div class="container">
-            <div class="service-category">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Residential Design">
+    <!-- Services Page Content -->
+    <main class="page-content">
+        <section class="services-page">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="text-center" style="margin-bottom: 50px;">Comprehensive roofing solutions tailored to protect your home and enhance its value.</p>
+                
+                <div id="roof-installation" class="service-detail">
+                    <div class="service-detail-content">
+                        <div class="service-detail-text">
+                            <h3>Roof Installation</h3>
+                            <p>Our comprehensive roof installation service begins with a detailed consultation to understand your needs, preferences, and budget. We then develop a customized plan that considers your home's architecture, local climate conditions, and aesthetic goals.</p>
+                            <p>We work with a wide range of premium roofing materials including architectural shingles, metal roofing, slate, and tile to create a roof that not only protects your home but enhances its curb appeal.</p>
+                            <ul style="margin: 20px 0; padding-left: 20px;">
+                                <li style="margin-bottom: 10px;">• Comprehensive consultation and design</li>
+                                <li style="margin-bottom: 10px;">• Premium material selection</li>
+                                <li style="margin-bottom: 10px;">• Expert installation by certified professionals</li>
+                                <li style="margin-bottom: 10px;">• Quality assurance and final inspection</li>
+                            </ul>
+                            <a href="contact.html" class="btn">Get a Quote</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80" alt="Roof Installation">
+                        </div>
+                    </div>
+                    <h4>What's Included:</h4>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">📐</div>
+                            <h5>Custom Design</h5>
+                            <p>Tailored solutions for your specific home and needs</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <h5>Premium Materials</h5>
+                            <p>High-quality, durable roofing materials</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👨‍🔧</div>
+                            <h5>Expert Installation</h5>
+                            <p>Skilled craftsmen with attention to detail</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-info">
-                    <h2>Residential Design</h2>
-                    <p>Transform your home into a sanctuary that reflects your personality and lifestyle. Our residential design services cover every aspect of your living space.</p>
-                    <ul>
-                        <li>Space planning and layout optimization</li>
-                        <li>Custom furniture and cabinetry design</li>
-                        <li>Lighting design and implementation</li>
-                        <li>Color consultation and material selection</li>
-                        <li>Kitchen and bathroom renovations</li>
-                        <li>Custom window treatments and soft furnishings</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+                
+                <div id="roof-repair" class="service-detail">
+                    <div class="service-detail-content">
+                        <div class="service-detail-text">
+                            <h3>Roof Repair</h3>
+                            <p>From minor leaks to storm damage, our roof repair services restore your roof's integrity and protect your home from further damage. We conduct thorough inspections to identify all issues and provide comprehensive solutions.</p>
+                            <p>Our emergency repair service is available 24/7 for urgent situations, ensuring your home remains protected when you need it most. We use advanced leak detection technology to pinpoint problems accurately.</p>
+                            <ul style="margin: 20px 0; padding-left: 20px;">
+                                <li style="margin-bottom: 10px;">• Emergency leak repair services</li>
+                                <li style="margin-bottom: 10px;">• Storm damage assessment and repair</li>
+                                <li style="margin-bottom: 10px;">• Shingle replacement and repair</li>
+                                <li style="margin-bottom: 10px;">• Flashing and sealant repairs</li>
+                            </ul>
+                            <a href="contact.html" class="btn">Schedule Repair</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Roof Repair">
+                        </div>
+                    </div>
+                    <h4>Common Repair Issues:</h4>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">💧</div>
+                            <h5>Leak Repair</h5>
+                            <p>Identify and fix sources of water intrusion</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌪️</div>
+                            <h5>Storm Damage</h5>
+                            <p>Repair damage from wind, hail, and fallen debris</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔍</div>
+                            <h5>Preventive Maintenance</h5>
+                            <p>Regular inspections to catch issues early</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="roof-replacement" class="service-detail">
+                    <div class="service-detail-content">
+                        <div class="service-detail-text">
+                            <h3>Roof Replacement</h3>
+                            <p>When repairs are no longer sufficient, our roof replacement service provides a complete solution for aging or severely damaged roofs. We carefully remove the existing roof, inspect the underlying structure, and install a new, high-performance roofing system.</p>
+                            <p>Our team manages the entire process efficiently, minimizing disruption to your daily life while delivering exceptional results that will protect your home for decades. We handle all necessary permits and inspections.</p>
+                            <ul style="margin: 20px 0; padding-left: 20px;">
+                                <li style="margin-bottom: 10px;">• Complete roof removal and disposal</li>
+                                <li style="margin-bottom: 10px;">• Structural assessment and repairs</li>
+                                <li style="margin-bottom: 10px;">• New underlayment and roofing materials</li>
+                                <li style="margin-bottom: 10px;">• Final cleanup and inspection</li>
+                            </ul>
+                            <a href="contact.html" class="btn">Get Replacement Quote</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.unsplash.com/photo-1562155846-2b863bb08249?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Roof Replacement">
+                        </div>
+                    </div>
+                    <h4>Replacement Process:</h4>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">📋</div>
+                            <h5>Comprehensive Assessment</h5>
+                            <p>Thorough evaluation of your current roof condition</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🗂️</div>
+                            <h5>Material Selection</h5>
+                            <p>Help choosing the best materials for your home and budget</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <h5>Efficient Installation</h5>
+                            <p>Professional installation with minimal disruption</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="gutter-installation" class="service-detail">
+                    <div class="service-detail-content">
+                        <div class="service-detail-text">
+                            <h3>Gutter Installation</h3>
+                            <p>Proper gutter systems are essential for protecting your home's foundation and preventing water damage. We design and install custom gutter systems that effectively channel water away from your home.</p>
+                            <p>We offer a variety of gutter materials and styles, including seamless aluminum, copper, and steel, to complement your home's architecture while providing maximum functionality. Our systems include proper downspout placement for optimal water management.</p>
+                            <ul style="margin: 20px 0; padding-left: 20px;">
+                                <li style="margin-bottom: 10px;">• Custom gutter design and measurement</li>
+                                <li style="margin-bottom: 10px;">• Seamless gutter installation</li>
+                                <li style="margin-bottom: 10px;">• Gutter guard systems</li>
+                                <li style="margin-bottom: 10px;">• Downspout and drainage solutions</li>
+                            </ul>
+                            <a href="contact.html" class="btn">Inquire About Gutters</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="Gutter Installation">
+                        </div>
+                    </div>
+                    <h4>Gutter Solutions:</h4>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌧️</div>
+                            <h5>Seamless Gutters</h5>
+                            <p>Custom-formed on-site for perfect fit and fewer leaks</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <h5>Gutter Guards</h5>
+                            <p>Protection systems to minimize debris buildup</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💧</div>
+                            <h5>Downspout Systems</h5>
+                            <p>Proper drainage to protect your foundation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta" style="margin-top: 40px;">
+                    <div class="container">
+                        <h2>Not Sure Which Service You Need?</h2>
+                        <p>Contact us for a free inspection and professional recommendation.</p>
+                        <a href="contact.html" class="btn">Get Free Inspection</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="service-category reverse">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Commercial Design">
-                </div>
-                <div class="service-info">
-                    <h2>Commercial Design</h2>
-                    <p>Create inspiring work environments that boost productivity, impress clients, and reflect your brand identity.</p>
-                    <ul>
-                        <li>Office space planning and design</li>
-                        <li>Retail and showroom design</li>
-                        <li>Restaurant and hospitality design</li>
-                        <li>Brand integration and wayfinding</li>
-                        <li>Acoustic solutions and privacy planning</li>
-                        <li>Sustainable and eco-friendly design</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-                </div>
-            </div>
-
-            <div class="service-category">
-                <div class="service-image">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Custom Solutions">
-                </div>
-                <div class="service-info">
-                    <h2>Custom Solutions</h2>
-                    <p>Tailored design services for unique spaces and specific requirements. We specialize in creating custom solutions that exceed expectations.</p>
-                    <ul>
-                        <li>Custom furniture design and fabrication</li>
-                        <li>Built-in storage solutions</li>
-                        <li>Specialty lighting installations</li>
-                        <li>Art curation and placement</li>
-                        <li>Accessibility and universal design</li>
-                        <li>Historic preservation and restoration</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advantages Section -->
-    <section class="advantages-section">
-        <div class="container">
-            <h2>Why Choose Our Services</h2>
-            <div class="advantages-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovative Solutions</h3>
-                    <p>We combine creativity with functionality to deliver unique design solutions that stand out.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Quality Assurance</h3>
-                    <p>Every project undergoes rigorous quality checks to ensure the highest standards are met.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>On-Time Delivery</h3>
-                    <p>We respect your time and deliver projects within agreed timelines without compromising quality.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <h3>Transparent Pricing</h3>
-                    <p>No hidden costs. We provide detailed quotes and stick to agreed budgets throughout the project.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Collaborative Approach</h3>
-                    <p>We work closely with you, ensuring your vision is realized while providing expert guidance.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Post-Project Support</h3>
-                    <p>Our relationship doesn't end at project completion. We provide ongoing support and maintenance.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section class="guarantee-section">
-        <div class="container">
-            <div class="guarantee-content">
-                <div class="guarantee-text">
-                    <h2>Our Quality Guarantee</h2>
-                    <p>We stand behind our work with comprehensive guarantees and warranties to give you complete peace of mind.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> 5-year craftsmanship warranty on all installations</li>
-                        <li><i class="fas fa-check-circle"></i> 1-year post-project support included</li>
-                        <li><i class="fas fa-check-circle"></i> Material quality guarantee from trusted suppliers</li>
-                        <li><i class="fas fa-check-circle"></i> Satisfaction guarantee or we'll make it right</li>
-                        <li><i class="fas fa-check-circle"></i> Professional liability insurance coverage</li>
-                    </ul>
-                    <a href="contact.html" class="btn btn-secondary">Learn More</a>
-                </div>
-                <div class="guarantee-image">
-                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Quality Guarantee">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Transform Your Space?</h2>
-            <p>Let's discuss your project and create something amazing together.</p>
-            <a href="contact.html" class="btn btn-secondary">Start Your Project</a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>ModernDesign</h3>
-                    <p>Creating beautiful, functional spaces that inspire and delight.</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</p>
-                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@moderndesign.com</p>
+                <div class="footer-column">
+                    <h3>Elite Roofing</h3>
+                    <p>Premium roofing solutions for luxury homes with unmatched craftsmanship and attention to detail.</p>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>TW</span></a>
+                        <a href="#"><span>LI</span></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>123 Premium Drive, Luxury District, CA 90210</li>
+                        <li>(555) 123-4567</li>
+                        <li>info@eliteroofing.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ModernDesign. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Elite Roofing. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile Navigation Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menuToggle');
-            const navMenu = document.getElementById('navMenu');
-            const overlay = document.getElementById('overlay');
-            
-            menuToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                overlay.classList.toggle('active');
-                
-                if (navMenu.classList.contains('active')) {
-                    menuToggle.innerHTML = '<i class="fas fa-times"></i>';
-                } else {
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-            
-            overlay.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                overlay.classList.remove('active');
-                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-            
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-            
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 768) {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
