@@ -3,347 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ModernDesign - Transform Your Space</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Elite Roofing | Premium Roofing Solutions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>ModernDesign</h1>
-            </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="overlay" id="overlay"></div>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Elite<span>Roofing</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Hero Section with Dynamic Background -->
-    <section class="hero" id="heroSection">
-        <div class="background-container" id="backgroundContainer">
-            <div class="background-layer layer-1" id="layer1"></div>
-            <div class="background-layer layer-2" id="layer2"></div>
-            <div class="background-layer layer-3" id="layer3"></div>
-        </div>
-        <div class="container">
+    <!-- Home Page Content -->
+    <main class="page-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="slide slide-1 active"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+            </div>
             <div class="hero-content">
-                <h1>Transform Your Space with Modern Design</h1>
-                <p>We create beautiful, functional spaces that reflect your style and enhance your lifestyle.</p>
-                <div class="hero-buttons">
-                    <a href="portfolio.html" class="btn btn-primary">View Our Work</a>
-                    <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+                <h1>Protecting Homes. Building Trust.</h1>
+                <p>Premium roofing solutions for luxury homes with unmatched craftsmanship and attention to detail.</p>
+                <a href="contact.html" class="btn">Request a Free Quote</a>
+            </div>
+            <div class="slider-nav">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="about">
+            <div class="container">
+                <h2 class="section-title">About Elite Roofing</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Trusted Roofing Experts Since 2005</h3>
+                        <p>At Elite Roofing, we combine decades of experience with premium materials to deliver exceptional roofing solutions for discerning homeowners. Our commitment to quality craftsmanship and customer satisfaction has made us the preferred choice for luxury residential roofing.</p>
+                        <p>We understand that your home is your most valuable investment, which is why we approach every project with the utmost care, precision, and attention to detail.</p>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" alt="Elite Roofing Team">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Highlights -->
-    <section class="services-highlights">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
+        <!-- Services Section -->
+        <section id="services-section" class="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>Roof Installation</h3>
+                        <p>Professional installation of premium roofing materials tailored to your home's architectural style and local climate conditions.</p>
+                        <a href="services.html#roof-installation" class="btn btn-secondary" style="margin-top: 15px;">Learn More</a>
                     </div>
-                    <h3>Residential Design</h3>
-                    <p>Transform your home into a beautiful, functional space that reflects your personality.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Roof Repair</h3>
+                        <p>Prompt and reliable repair services to address leaks, storm damage, and wear to extend the life of your roof.</p>
+                        <a href="services.html#roof-repair" class="btn btn-secondary" style="margin-top: 15px;">Learn More</a>
                     </div>
-                    <h3>Commercial Design</h3>
-                    <p>Create inspiring work environments that boost productivity and impress clients.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pencil-ruler"></i>
+                    <div class="service-card">
+                        <div class="service-icon">🔄</div>
+                        <h3>Roof Replacement</h3>
+                        <p>Complete roof replacement with the highest quality materials and expert installation for lasting protection.</p>
+                        <a href="services.html#roof-replacement" class="btn btn-secondary" style="margin-top: 15px;">Learn More</a>
                     </div>
-                    <h3>Custom Solutions</h3>
-                    <p>Tailored design solutions to meet your specific needs and budget requirements.</p>
+                    <div class="service-card">
+                        <div class="service-icon">🌧️</div>
+                        <h3>Gutter Installation</h3>
+                        <p>Custom gutter systems designed to effectively manage water runoff and protect your home's foundation.</p>
+                        <a href="services.html#gutter-installation" class="btn btn-secondary" style="margin-top: 15px;">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Featured Portfolio -->
-    <section class="featured-portfolio">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="portfolio-slider">
-                <div class="slider-container">
-                    <div class="slider-track" id="sliderTrack">
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Modern Living Room">
-                            <div class="slide-overlay">
-                                <h3>Modern Living Room</h3>
-                                <p>Clean lines and minimalist design</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Kitchen Design">
-                            <div class="slide-overlay">
-                                <h3>Contemporary Kitchen</h3>
-                                <p>Elegant and functional space</p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Office Design">
-                            <div class="slide-overlay">
-                                <h3>Modern Office Space</h3>
-                                <p>Productive and inspiring environment</p>
-                            </div>
-                        </div>
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <p class="testimonial-text">"Elite Roofing transformed our home with their exceptional craftsmanship. The attention to detail and professionalism was outstanding from start to finish."</p>
+                        <p class="testimonial-author">- James & Sarah Thompson</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"After a severe storm damaged our roof, Elite Roofing responded quickly and completed the repairs with precision. Their team was courteous and efficient."</p>
+                        <p class="testimonial-author">- Michael Rodriguez</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">"We couldn't be happier with our new roof. The quality of materials and workmanship exceeded our expectations. Highly recommended!"</p>
+                        <p class="testimonial-author">- Jennifer Williams</p>
                     </div>
                 </div>
-                <div class="slider-controls">
-                    <button class="prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                <div class="testimonial-nav">
+                    <div class="testimonial-dot active" data-testimonial="0"></div>
+                    <div class="testimonial-dot" data-testimonial="1"></div>
+                    <div class="testimonial-dot" data-testimonial="2"></div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Transform Your Space?</h2>
-            <p>Contact us today for a free consultation and let's bring your vision to life.</p>
-            <a href="contact.html" class="btn btn-secondary">Get Started</a>
-        </div>
-    </section>
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to Protect Your Home?</h2>
+                <p>Contact us today for a free consultation and estimate. Our team is ready to provide you with the premium roofing solution your home deserves.</p>
+                <a href="contact.html" class="btn">Get Your Free Quote</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>ModernDesign</h3>
-                    <p>Creating beautiful, functional spaces that inspire and delight.</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</p>
-                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@moderndesign.com</p>
+                <div class="footer-column">
+                    <h3>Elite Roofing</h3>
+                    <p>Premium roofing solutions for luxury homes with unmatched craftsmanship and attention to detail.</p>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>TW</span></a>
+                        <a href="#"><span>LI</span></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>123 Premium Drive, Luxury District, CA 90210</li>
+                        <li>(555) 123-4567</li>
+                        <li>info@eliteroofing.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ModernDesign. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Elite Roofing. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile Navigation Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menuToggle');
-            const navMenu = document.getElementById('navMenu');
-            const overlay = document.getElementById('overlay');
-            
-            menuToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                overlay.classList.toggle('active');
-                
-                if (navMenu.classList.contains('active')) {
-                    menuToggle.innerHTML = '<i class="fas fa-times"></i>';
-                } else {
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-            
-            overlay.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                overlay.classList.remove('active');
-                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-            
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-            
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 768) {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-
-            // Portfolio Slider
-            const sliderTrack = document.getElementById('sliderTrack');
-            const slides = document.querySelectorAll('.slide');
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            let currentSlide = 0;
-            
-            function updateSlider() {
-                sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-            }
-            
-            if (prevBtn && nextBtn) {
-                prevBtn.addEventListener('click', function() {
-                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-                    updateSlider();
-                });
-                
-                nextBtn.addEventListener('click', function() {
-                    currentSlide = (currentSlide + 1) % slides.length;
-                    updateSlider();
-                });
-            }
-
-            // Dynamic Background Effect
-            const heroSection = document.getElementById('heroSection');
-            const layer1 = document.getElementById('layer1');
-            const layer2 = document.getElementById('layer2');
-            const layer3 = document.getElementById('layer3');
-            
-            // Set background images for layers
-            layer1.style.backgroundImage = "url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')";
-            layer2.style.backgroundImage = "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')";
-            layer3.style.backgroundImage = "url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')";
-            
-            // Variables for animation
-            let scale1 = 1;
-            let scale2 = 1;
-            let scale3 = 1;
-            let xPos1 = 0;
-            let yPos1 = 0;
-            let xPos2 = 0;
-            let yPos2 = 0;
-            let xPos3 = 0;
-            let yPos3 = 0;
-            
-            // Animation speeds and directions
-            const speed1 = 0.0001;
-            const speed2 = 0.00015;
-            const speed3 = 0.0002;
-            
-            // Animation function
-            function animateBackground() {
-                // Update scale values for zoom effect
-                scale1 = 1 + Math.sin(Date.now() * speed1) * 0.1;
-                scale2 = 1 + Math.sin(Date.now() * speed2 + 1) * 0.15;
-                scale3 = 1 + Math.sin(Date.now() * speed3 + 2) * 0.2;
-                
-                // Update position values for panning effect
-                xPos1 = Math.sin(Date.now() * speed1 * 0.7) * 5;
-                yPos1 = Math.cos(Date.now() * speed1 * 0.5) * 3;
-                xPos2 = Math.cos(Date.now() * speed2 * 0.6) * 7;
-                yPos2 = Math.sin(Date.now() * speed2 * 0.8) * 4;
-                xPos3 = Math.sin(Date.now() * speed3 * 0.9) * 10;
-                yPos3 = Math.cos(Date.now() * speed3 * 0.7) * 6;
-                
-                // Apply transformations to layers
-                layer1.style.transform = `scale(${scale1}) translate(${xPos1}%, ${yPos1}%)`;
-                layer2.style.transform = `scale(${scale2}) translate(${xPos2}%, ${yPos2}%)`;
-                layer3.style.transform = `scale(${scale3}) translate(${xPos3}%, ${yPos3}%)`;
-                
-                // Continue animation
-                requestAnimationFrame(animateBackground);
-            }
-            
-            // Start animation
-            animateBackground();
-            
-            // Add CSS for background layers via JavaScript
-            const style = document.createElement('style');
-            style.textContent = `
-                .background-container {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: hidden;
-                    z-index: -1;
-                }
-                
-                .background-layer {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    transition: transform 0.1s ease-out;
-                }
-                
-                .layer-1 {
-                    opacity: 0.7;
-                }
-                
-                .layer-2 {
-                    opacity: 0.5;
-                }
-                
-                .layer-3 {
-                    opacity: 0.3;
-                }
-                
-                .hero {
-                    position: relative;
-                }
-                
-                .hero::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.5);
-                    z-index: 0;
-                }
-                
-                .hero .container {
-                    position: relative;
-                    z-index: 1;
-                }
-            `;
-            document.head.appendChild(style);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
