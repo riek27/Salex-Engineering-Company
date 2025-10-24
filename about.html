@@ -3,263 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - ModernDesign</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>About Us | Elite Roofing</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>ModernDesign</h1>
-            </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="process.html">Process</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="overlay" id="overlay"></div>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Elite<span>Roofing</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown-content">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>About Us</h1>
-            <p>Learn more about our story, mission, and the team behind ModernDesign</p>
-        </div>
-    </section>
+    <!-- About Us Page Content -->
+    <main class="page-content">
+        <section class="about-page">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-page-content">
+                    <div>
+                        <h3>Our Story</h3>
+                        <p>Founded in 2005, Elite Roofing has grown from a small family business to one of the region's most trusted roofing contractors. Our commitment to excellence and customer satisfaction has been the foundation of our success.</p>
+                        <p>We specialize in high-end residential roofing projects, combining traditional craftsmanship with modern techniques and premium materials to deliver exceptional results that stand the test of time.</p>
+                        <h3>Our Mission</h3>
+                        <p>To protect homes and build trust through superior roofing solutions, uncompromising quality, and exceptional customer service. We believe that every home deserves the best protection possible.</p>
+                        <h3>Our Values</h3>
+                        <p>We operate with integrity, transparency, and a commitment to excellence in every aspect of our business. From initial consultation to project completion, we prioritize clear communication and customer satisfaction.</p>
+                    </div>
+                    <div class="about-page-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Our Team">
+                    </div>
+                </div>
+                
+                <h3 class="section-title">Why Choose Elite Roofing?</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">⭐</div>
+                        <h3>Premium Materials</h3>
+                        <p>We use only the highest quality materials from trusted manufacturers to ensure durability and longevity.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👨‍🔧</div>
+                        <h3>Expert Craftsmanship</h3>
+                        <p>Our skilled team brings decades of combined experience to every project, delivering flawless results.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Warranty Protection</h3>
+                        <p>We stand behind our work with comprehensive warranties for your peace of mind.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⏱️</div>
+                        <h3>Timely Completion</h3>
+                        <p>We respect your time and complete projects on schedule with minimal disruption.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💎</div>
+                        <h3>Attention to Detail</h3>
+                        <p>Every project receives our meticulous attention to ensure perfection in every detail.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📞</div>
+                        <h3>24/7 Support</h3>
+                        <p>Emergency services available around the clock for urgent roofing needs.</p>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">18+</div>
+                        <div class="stat-text">Years of Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2,500+</div>
+                        <div class="stat-text">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-text">Customer Satisfaction</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25</div>
+                        <div class="stat-text">Expert Team Members</div>
+                    </div>
+                </div>
 
-    <!-- About Story -->
-    <section class="about-story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <h2>Our Story</h2>
-                    <p>Founded in 2010, ModernDesign began as a small studio with a big vision: to transform spaces through innovative design solutions that blend functionality with aesthetic appeal.</p>
-                    <p>Over the years, we've grown into a full-service design firm, serving both residential and commercial clients across the country. Our team of passionate designers, architects, and project managers work together to bring our clients' visions to life.</p>
-                    <p>We believe that great design has the power to transform not just spaces, but lives. Every project we undertake is approached with creativity, attention to detail, and a commitment to excellence.</p>
-                </div>
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Our Studio">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission Vision -->
-    <section class="mission-vision">
-        <div class="container">
-            <div class="mission-grid">
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
-                    <h3>Our Mission</h3>
-                    <p>To create inspiring, functional spaces that enhance our clients' quality of life and reflect their unique personalities and needs.</p>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>Our Vision</h3>
-                    <p>To be the leading design firm known for innovative solutions, exceptional craftsmanship, and unparalleled client satisfaction.</p>
-                </div>
-                <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Our Values</h3>
-                    <p>Integrity, creativity, collaboration, and excellence guide everything we do, from initial concept to final implementation.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <h2>By The Numbers</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="250">0</div>
-                    <div class="stat-label">Projects Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="12">0</div>
-                    <div class="stat-label">Years Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="50">0</div>
-                    <div class="stat-label">Team Members</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="98">0</div>
-                    <div class="stat-label">Satisfied Clients</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Meet Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="John Smith">
-                    </div>
-                    <div class="member-info">
-                        <h3>John Smith</h3>
-                        <p class="position">Founder & Creative Director</p>
-                        <p>With over 15 years of experience in interior design, John leads our creative vision and ensures every project meets our high standards.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Sarah Johnson">
-                    </div>
-                    <div class="member-info">
-                        <h3>Sarah Johnson</h3>
-                        <p class="position">Senior Interior Designer</p>
-                        <p>Sarah specializes in residential design and has a keen eye for color theory and spatial planning that transforms ordinary spaces into extraordinary ones.</p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member-image">
-                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Michael Chen">
-                    </div>
-                    <div class="member-info">
-                        <h3>Michael Chen</h3>
-                        <p class="position">Project Manager</p>
-                        <p>Michael ensures that every project runs smoothly, on time, and within budget, coordinating between clients, designers, and contractors.</p>
+                <div class="cta" style="margin-top: 60px;">
+                    <div class="container">
+                        <h2>Ready to Work With Us?</h2>
+                        <p>Join thousands of satisfied homeowners who trust Elite Roofing with their most valuable investment.</p>
+                        <a href="contact.html" class="btn">Get Your Free Quote</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Start Your Project?</h2>
-            <p>Let's work together to create something amazing. Contact us today for a free consultation.</p>
-            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-info">
-                    <h3>ModernDesign</h3>
-                    <p>Creating beautiful, functional spaces that inspire and delight.</p>
-                    <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creative City</p>
-                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                        <p><i class="fas fa-envelope"></i> info@moderndesign.com</p>
+                <div class="footer-column">
+                    <h3>Elite Roofing</h3>
+                    <p>Premium roofing solutions for luxury homes with unmatched craftsmanship and attention to detail.</p>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>TW</span></a>
+                        <a href="#"><span>LI</span></a>
                     </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html#roof-installation">Roof Installation</a></li>
+                        <li><a href="services.html#roof-repair">Roof Repair</a></li>
+                        <li><a href="services.html#roof-replacement">Roof Replacement</a></li>
+                        <li><a href="services.html#gutter-installation">Gutter Installation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>123 Premium Drive, Luxury District, CA 90210</li>
+                        <li>(555) 123-4567</li>
+                        <li>info@eliteroofing.com</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ModernDesign. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 Elite Roofing. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile Navigation Toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menuToggle');
-            const navMenu = document.getElementById('navMenu');
-            const overlay = document.getElementById('overlay');
-            
-            menuToggle.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-                overlay.classList.toggle('active');
-                
-                if (navMenu.classList.contains('active')) {
-                    menuToggle.innerHTML = '<i class="fas fa-times"></i>';
-                } else {
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-            
-            overlay.addEventListener('click', function() {
-                navMenu.classList.remove('active');
-                overlay.classList.remove('active');
-                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            });
-            
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-            
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 768) {
-                    navMenu.classList.remove('active');
-                    overlay.classList.remove('active');
-                    menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-                }
-            });
-
-            // Animate stats counter
-            const counters = document.querySelectorAll('.stat-number');
-            const speed = 200;
-
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-count');
-                    const count = +counter.innerText;
-                    const increment = target / speed;
-
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 1);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-
-                updateCount();
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
